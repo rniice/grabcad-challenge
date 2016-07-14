@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "35da536d4ff2e75a56f0"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "138354ca61426c960b4a"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -81320,6 +81320,8 @@
 	                _this.state.cylinderJSX = _react2.default.createElement(_Cylinder2.default, { radius: 75, height: 300, color: 0xffff00, geometry: geometry });
 
 	                _this.state.lineJSX = null; //clear the previous line
+	                _this.state.closestDistance = null; //clear previous calculated distance
+	                _this.state.closetCylinderVertex = null; //clear previous calcualted cylinder vertex
 	            })();
 	        }
 
@@ -81333,6 +81335,8 @@
 	                _this.state.pointJSX = _react2.default.createElement(_Point2.default, { position: random_position });
 
 	                _this.state.lineJSX = null; //clear the previous line
+	                _this.state.closestDistance = null; //clear previous calculated distance
+	                _this.state.closetCylinderVertex = null; //clear previous calcualted cylinder vertex
 	            })();
 	        }
 
